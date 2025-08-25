@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="Calculator.MainMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+	<Page.Resources>
+		<Style TargetType="Button">
+			<Setter Property="HorizontalAlignment" Value="Center" />
+			<Setter Property="MinWidth" Value="500" />
+			<Setter Property="MinHeight" Value="50" />
+			<Setter Property="FontSize" Value="36" />
+			<Setter Property="Margin" Value="0,10,0,20" />
+			<Setter Property="BorderThickness" Value="2" />
+		</Style>
+	</Page.Resources>
+
+	<Grid>
+		<TextBlock Text="Universal Calculator" FontSize="60" HorizontalAlignment="Center" Margin="0,10,0,0" />
+		<StackPanel HorizontalAlignment="Center" Margin="0,200,0,0">
+			<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" MinHeight="610">
+				<Button x:Name="mathCalculatorButton" Content="Math Calculator" BorderBrush="Orange" Click="mathCalculatorButton_Click_1" />
+				<Button x:Name="mortgageCalculatorButton" Content="Mortgage Calculator" BorderBrush="Blue" Click="mortgageCalculatorButton_Click" />
+				<Button x:Name="currencyCalculatorButton" Content="Currency Calculator" BorderBrush="Purple" Click="currencyCalculatorButton_Click" />
+				<Button x:Name="exitButton" Content="Exit" Margin="0,130,0,0" BorderBrush="Red" Click="exitButton_Click" />
+			</StackPanel>
+		</StackPanel>
+		<StackPanel>
+			<Image Source="/Images/abacus.jpg" Height="150" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="50" />
+		</StackPanel>
+	</Grid>
+</Page>
