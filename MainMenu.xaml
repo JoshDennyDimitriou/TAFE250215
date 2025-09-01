@@ -23,21 +23,14 @@
 		<TextBlock Text="Universal Calculator" FontSize="60" HorizontalAlignment="Center" Margin="0,10,0,0" />
 		<StackPanel HorizontalAlignment="Center" Margin="0,200,0,0">
 			<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" MinHeight="610">
-<<<<<<< HEAD
-				<Button x:Name="mathCalculatorButton" Content="Math Calculator" BorderBrush="Orange" Click="mathCalculatorButton_Click_1" />
-				<Button x:Name="mortgageCalculatorButton" Content="Mortgage Calculator" BorderBrush="Blue" Click="mortgageCalculatorButton_Click" />
-				<Button x:Name="currencyCalculatorButton" Content="Currency Calculator" BorderBrush="Purple" Click="currencyCalculatorButton_Click" />
-				<Button x:Name="exitButton" Content="Exit" Margin="0,130,0,0" BorderBrush="Red" Click="exitButton_Click" />
-=======
-				<Button x:Name="mathCalculatorButton" Content="Math Calculator" BorderBrush="Orange" />
-				<Button x:Name="mortgageCalculatorButton" Content="Mortgage Calculator" BorderBrush="Blue" />
-				<Button x:Name="currencyCalculatorButton" Content="Currency Calculator" BorderBrush="Purple"  />
+
+				<Button x:Name="mathCalculatorButton" Content="Math Calculator" BorderBrush="Orange"/>
+				<Button x:Name="mortgageCalculatorButton" Content="Mortgage Calculator" BorderBrush="Blue"/>
+				<Button x:Name="currencyCalculatorButton" Content="Currency Calculator" BorderBrush="Purple"/>
 				<Button x:Name="exitButton" Content="Exit" Margin="0,130,0,0" BorderBrush="Red"/>
->>>>>>> feature/mortgage-calculator
-			</StackPanel>
+
+				<Image Source="/Images/abacus.jpg" Height="150" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="50" />
 		</StackPanel>
-		<StackPanel>
-			<Image Source="/Images/abacus.jpg" Height="150" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="50" />
 		</StackPanel>
 	</Grid>
 </Page>
