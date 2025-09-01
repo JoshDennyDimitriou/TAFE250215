@@ -1,0 +1,124 @@
+﻿<Page
+    x:Class="Calculator.CurrencyConverter"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+	<Page.Resources>
+		<Style TargetType="TextBlock">
+			<Setter Property="FontSize" Value="36" />
+			<Setter Property="Margin" Value="0,10" />
+		</Style>
+		<Style x:Key="ComboText" TargetType="TextBlock">
+			<Setter Property="FontSize" Value="17" />
+			<Setter Property="MinWidth" Value="100" />
+			<Setter Property="Margin" Value="0,0,210,0" />
+		</Style>
+		<Style TargetType="Button">
+			<Setter Property="HorizontalAlignment" Value="Center" />
+			<Setter Property="MinWidth" Value="500" />
+			<Setter Property="MinHeight" Value="50" />
+			<Setter Property="FontSize" Value="36" />
+			<Setter Property="Margin" Value="0,10,0,20" />
+			<Setter Property="BorderThickness" Value="2" />
+		</Style>
+	</Page.Resources>
+
+	<Grid>
+		<StackPanel>
+			<TextBlock x:Name="headingTextBlock" Text="Currency Conversion Calculator" FontSize="60" Margin="10" HorizontalAlignment="Center" />
+			<StackPanel>
+				<StackPanel Orientation="Horizontal">
+					<!--This will hold the "Amount", "From", and "To" sections-->
+					<StackPanel MinWidth="386" MinHeight="100" Margin="20,0">
+						<!--This is for the "Amount"-->
+						<TextBlock x:Name="amountTextBlock" Text="Amount $" />
+						<TextBox x:Name="amountTextBox" PlaceholderText="Enter Amount here" MinHeight="40" TextChanged="amountTextBox_TextChanged"/>
+					</StackPanel>
+					<StackPanel MinWidth="387" Margin="20,0">
+						<!--This is for the "From" currency-->
+						<TextBlock x:Name="fromCurrencyTextBlock" Text="From" />
+						<ComboBox x:Name="fromCurrencyComboBox" PlaceholderText="Select Currency" MinWidth="387" MinHeight="40">
+							<ComboBoxItem>
+								<StackPanel Orientation="Horizontal">
+									<!-- US Dollar Combo Item -->
+									<TextBlock Style="{StaticResource ComboText}">USD - US Dollar</TextBlock>
+									<Image Source="/Images/USA1.PNG" Height="19" Width="30" HorizontalAlignment="Right"/>
+								</StackPanel>
+							</ComboBoxItem>
+							<ComboBoxItem>
+								<StackPanel Orientation="Horizontal">
+									<!-- Euro Combo Item -->
+									<TextBlock Style="{StaticResource ComboText}">EUR - Euro</TextBlock>
+									<Image Source="/Images/EUR1.PNG" Height="19" Width="30" HorizontalAlignment="Right"/>
+								</StackPanel>
+							</ComboBoxItem>
+							<ComboBoxItem>
+								<StackPanel Orientation="Horizontal">
+									<!-- British Pound Combo Item -->
+									<TextBlock Style="{StaticResource ComboText}">GBP - British Pound</TextBlock>
+									<Image Source="/Images/UK1.PNG" Height="19" Width="30" HorizontalAlignment="Right"/>
+								</StackPanel>
+							</ComboBoxItem>
+							<ComboBoxItem>
+								<StackPanel Orientation="Horizontal">
+									<!-- Indian Rupee Combo Item -->
+									<TextBlock Style="{StaticResource ComboText}">INR - Indian Rupee</TextBlock>
+									<Image Source="/Images/INDIA.PNG" Height="19" Width="30" HorizontalAlignment="Right"/>
+								</StackPanel>
+							</ComboBoxItem>
+						</ComboBox>
+					</StackPanel>
+					<StackPanel MinWidth="386" Margin="20,0">
+						<!--This is for the "To" currency-->
+						<TextBlock x:Name="toCurrencyTextBlock" Text="To" />
+						<ComboBox x:Name="toCurrencyComboBox" PlaceholderText="Select Currency" MinWidth="386" MinHeight="40">
+							<ComboBoxItem>
+								<StackPanel Orientation="Horizontal">
+									<!-- US Dollar Combo Item -->
+									<TextBlock Style="{StaticResource ComboText}">USD - US Dollar</TextBlock>
+									<Image Source="/Images/USA1.PNG" Height="19" Width="30" HorizontalAlignment="Right"/>
+								</StackPanel>
+							</ComboBoxItem>
+							<ComboBoxItem>
+								<StackPanel Orientation="Horizontal">
+									<!-- Euro Combo Item -->
+									<TextBlock Style="{StaticResource ComboText}">EUR - Euro</TextBlock>
+									<Image Source="/Images/EUR1.PNG" Height="19" Width="30" HorizontalAlignment="Right"/>
+								</StackPanel>
+							</ComboBoxItem>
+							<ComboBoxItem>
+								<StackPanel Orientation="Horizontal">
+									<!-- British Pound Combo Item -->
+									<TextBlock Style="{StaticResource ComboText}">GBP - British Pound</TextBlock>
+									<Image Source="/Images/UK1.PNG" Height="19" Width="30" HorizontalAlignment="Right"/>
+								</StackPanel>
+							</ComboBoxItem>
+							<ComboBoxItem>
+								<StackPanel Orientation="Horizontal">
+									<!-- Indian Rupee Combo Item -->
+									<TextBlock Style="{StaticResource ComboText}">INR - Indian Rupee</TextBlock>
+									<Image Source="/Images/INDIA.PNG" Height="19" Width="30" HorizontalAlignment="Right"/>
+								</StackPanel>
+							</ComboBoxItem>
+						</ComboBox>
+					</StackPanel>
+				</StackPanel>
+				<StackPanel Margin="20,20">
+					<TextBlock x:Name="outputAmountTextBlock" Text="This is where the amount will be displayed" />
+					<TextBlock x:Name="outputCalcTextBlock" Text="Value goes here" />
+					<TextBlock x:Name="fromToTextBlock" Text="From To" FontSize="26" Margin="0,20" />
+					<TextBlock x:Name="toFromTextBlock" Text="To From" FontSize="26" Margin="0,20" />
+				</StackPanel>
+				<StackPanel>
+					<Button x:Name="calculateButton" Content="Calculate Currency" BorderBrush="Purple" Click="calculateButton_Click" />
+					<Button x:Name="exitButton" Content="Exit" BorderBrush="Red" Click="exitButton_Click" />
+				</StackPanel>
+			</StackPanel>
+		</StackPanel>
+	</Grid>
+</Page>
