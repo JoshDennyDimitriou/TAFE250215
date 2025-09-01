@@ -15,8 +15,8 @@
 		</Style>
 		<Style x:Key="ComboText" TargetType="TextBlock">
 			<Setter Property="FontSize" Value="17" />
-			<Setter Property="MinWidth" Value="100" />
-			<Setter Property="Margin" Value="0,0,210,0" />
+			<Setter Property="Width" Value="300" />
+			<Setter Property="Margin" Value="0,0,10,0" />
 		</Style>
 		<Style TargetType="Button">
 			<Setter Property="HorizontalAlignment" Value="Center" />
@@ -37,7 +37,7 @@
 					<StackPanel MinWidth="386" MinHeight="100" Margin="20,0">
 						<!--This is for the "Amount"-->
 						<TextBlock x:Name="amountTextBlock" Text="Amount $" />
-						<TextBox x:Name="amountTextBox" PlaceholderText="Enter Amount here" MinHeight="40" TextChanged="amountTextBox_TextChanged"/>
+						<TextBox x:Name="amountTextBox" PlaceholderText="Enter Amount here" MinHeight="40" />
 					</StackPanel>
 					<StackPanel MinWidth="387" Margin="20,0">
 						<!--This is for the "From" currency-->

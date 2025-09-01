@@ -27,7 +27,7 @@ namespace Calculator
 			this.InitializeComponent();
 		}
 
-		private void mathCalculatorButton_Click_1(object sender, RoutedEventArgs e)
+		private void mathCalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
 			this.Frame.Navigate(typeof(MainPage));
 		}
@@ -44,7 +44,7 @@ namespace Calculator
 
 		private void exitButton_Click(object sender, RoutedEventArgs e)
 		{
-
+			Application.Current.Exit();
 		}
 	}
 }
