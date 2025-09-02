@@ -12,11 +12,13 @@
 		<Style TargetType="TextBlock">
 			<Setter Property="FontSize" Value="36" />
 			<Setter Property="Margin" Value="0,10" />
+			<Setter Property="Foreground" Value="Black" />
 		</Style>
 		<Style x:Key="ComboText" TargetType="TextBlock">
 			<Setter Property="FontSize" Value="17" />
 			<Setter Property="Width" Value="300" />
 			<Setter Property="Margin" Value="0,0,10,0" />
+			<Setter Property="Foreground" Value="White" />
 		</Style>
 		<Style TargetType="Button">
 			<Setter Property="HorizontalAlignment" Value="Center" />
@@ -25,10 +27,11 @@
 			<Setter Property="FontSize" Value="36" />
 			<Setter Property="Margin" Value="0,10,0,20" />
 			<Setter Property="BorderThickness" Value="2" />
+			<Setter Property="Foreground" Value="Black" />
 		</Style>
 	</Page.Resources>
 
-	<Grid>
+	<Grid Background="LightGray">
 		<StackPanel>
 			<TextBlock x:Name="headingTextBlock" Text="Currency Conversion Calculator" FontSize="60" Margin="10" HorizontalAlignment="Center" />
 			<StackPanel>
@@ -109,10 +112,10 @@
 					</StackPanel>
 				</StackPanel>
 				<StackPanel Margin="20,20">
-					<TextBlock x:Name="outputAmountTextBlock" Text="This is where the amount will be displayed" />
-					<TextBlock x:Name="outputCalcTextBlock" Text="Value goes here" />
-					<TextBlock x:Name="fromToTextBlock" Text="From To" FontSize="26" Margin="0,20" />
-					<TextBlock x:Name="toFromTextBlock" Text="To From" FontSize="26" Margin="0,20" />
+					<TextBlock x:Name="outputAmountTextBlock" Text="" />
+					<TextBlock x:Name="outputCalcTextBlock" Text="" />
+					<TextBlock x:Name="fromToTextBlock" Text="" FontSize="26" Margin="0,20" />
+					<TextBlock x:Name="toFromTextBlock" Text="" FontSize="26" Margin="0,20" />
 				</StackPanel>
 				<StackPanel>
 					<Button x:Name="calculateButton" Content="Calculate Currency" BorderBrush="Purple" Click="calculateButton_Click" />
