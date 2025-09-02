@@ -34,7 +34,7 @@ namespace Calculator
 
 		private void mortgageCalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
-
+			
 		}
 
 		private void currencyCalculatorButton_Click(object sender, RoutedEventArgs e)
