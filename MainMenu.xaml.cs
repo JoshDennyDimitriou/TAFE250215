@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -29,22 +30,22 @@ namespace Calculator
 
 		private void mathCalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
-
+			this.Frame.Navigate(typeof(MainPage));
 		}
 
 		private void mortgageCalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
-			
+			this.Frame.Navigate(typeof(MortgageCalculator));
 		}
 
 		private void currencyCalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
-
+			this.Frame.Navigate(typeof(CurrencyConverter));
 		}
 
 		private void exitButton_Click(object sender, RoutedEventArgs e)
 		{
-
+			CoreApplication.Exit();
 		}
 	}
 }
