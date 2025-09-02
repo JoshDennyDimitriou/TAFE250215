@@ -16,7 +16,7 @@
 			<Setter Property="Foreground" Value="Black" />
 		</Style>
 	</Page.Resources>
-	
+	<!-- layout for mortgage calculator -->
 	<Grid Background="LightGray">
 		<StackPanel Orientation="Vertical">
 			<TextBlock FontSize="40" Text="Mortgage Calculator" HorizontalAlignment="Center"/>
