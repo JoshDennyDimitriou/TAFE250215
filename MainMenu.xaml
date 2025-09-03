@@ -27,7 +27,8 @@
 				<Button x:Name="mathCalculatorButton" Content="Math Calculator" BorderBrush="Orange" Click="mathCalculatorButton_Click"/>
 				<Button x:Name="mortgageCalculatorButton" Content="Mortgage Calculator" BorderBrush="Blue" Click="mortgageCalculatorButton_Click"/>
 				<Button x:Name="currencyCalculatorButton" Content="Currency Calculator" BorderBrush="Purple" Click="currencyCalculatorButton_Click"/>
-				<Button x:Name="exitButton" Content="Exit" Margin="0,130,0,0" BorderBrush="Red" Click="exitButton_Click"/>
+				<Button x:Name="TripCalculatorButton" Content="Trip Calculator" BorderBrush="Orange" Click="TripCalculatorButton_Click" />
+				<Button x:Name="exitButton" Content="Exit" Margin="0,60,0,0" BorderBrush="Red" Click="exitButton_Click"/>
 			</StackPanel>
 		</StackPanel>
 		<StackPanel>
